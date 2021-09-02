@@ -31,6 +31,7 @@
             this.btnEmpezar = new System.Windows.Forms.Button();
             this.cbJugadores = new System.Windows.Forms.ComboBox();
             this.btnSalir = new System.Windows.Forms.Button();
+            this.lblTitulo = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnEmpezar
@@ -42,6 +43,7 @@
             this.btnEmpezar.TabIndex = 0;
             this.btnEmpezar.Text = "Empezar";
             this.btnEmpezar.UseVisualStyleBackColor = true;
+            this.btnEmpezar.Click += new System.EventHandler(this.btnEmpezar_Click);
             // 
             // cbJugadores
             // 
@@ -51,7 +53,6 @@
             "2 Jugadores",
             "3 Jugadores",
             "4 Jugadores"});
-            this.cbJugadores.SelectedItem = "2 Jugadores";
             this.cbJugadores.Location = new System.Drawing.Point(309, 238);
             this.cbJugadores.Name = "cbJugadores";
             this.cbJugadores.Size = new System.Drawing.Size(199, 24);
@@ -69,11 +70,22 @@
             this.btnSalir.UseVisualStyleBackColor = true;
             this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
+            // lblTitulo
+            // 
+            this.lblTitulo.AutoSize = true;
+            this.lblTitulo.Font = new System.Drawing.Font("Microsoft JhengHei UI", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitulo.Location = new System.Drawing.Point(156, 66);
+            this.lblTitulo.Name = "lblTitulo";
+            this.lblTitulo.Size = new System.Drawing.Size(525, 61);
+            this.lblTitulo.TabIndex = 3;
+            this.lblTitulo.Text = "YAHTZEE - PC Edition";
+            // 
             // frmInicio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.lblTitulo);
             this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.cbJugadores);
             this.Controls.Add(this.btnEmpezar);
@@ -81,6 +93,7 @@
             this.Text = "Yahtzee";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -89,7 +102,7 @@
         private System.Windows.Forms.Button btnEmpezar;
         private System.Windows.Forms.ComboBox cbJugadores;
         private System.Windows.Forms.Button btnSalir;
-
+        private System.Windows.Forms.Label lblTitulo;
     }
 }
 

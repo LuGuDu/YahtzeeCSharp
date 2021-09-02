@@ -7,3 +7,4 @@ C:\Users\lugud\source\repos\Yahtzee\Yahtzee\obj\Debug\Yahtzee.csproj.GenerateRes
 C:\Users\lugud\source\repos\Yahtzee\Yahtzee\obj\Debug\Yahtzee.exe
 C:\Users\lugud\source\repos\Yahtzee\Yahtzee\obj\Debug\Yahtzee.pdb
 C:\Users\lugud\source\repos\Yahtzee\Yahtzee\obj\Debug\Yahtzee.frmInicio.resources
+C:\Users\lugud\source\repos\Yahtzee\Yahtzee\obj\Debug\Yahtzee.frmJuego.resources

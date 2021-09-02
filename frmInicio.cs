@@ -31,5 +31,15 @@ namespace Yahtzee
         {
 
         }
+
+        private void btnEmpezar_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            frmJuego juego = new frmJuego();
+            juego.setJugadores(cbJugadores.SelectedIndex);
+            juego.setLabelJugadores();
+            juego.Show();
+
+        }
     }
 }
