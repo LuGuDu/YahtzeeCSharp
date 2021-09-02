@@ -34,7 +34,7 @@
             // lblJugadores
             // 
             this.lblJugadores.AutoSize = true;
-            this.lblJugadores.Location = new System.Drawing.Point(180, 130);
+            this.lblJugadores.Location = new System.Drawing.Point(32, 34);
             this.lblJugadores.Name = "lblJugadores";
             this.lblJugadores.Size = new System.Drawing.Size(46, 17);
             this.lblJugadores.TabIndex = 0;
@@ -47,8 +47,9 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.lblJugadores);
             this.Name = "frmJuego";
-            this.Text = "Form1";
+            this.Text = "Yahtzee";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmJuego_FormClosing);
+            this.Load += new System.EventHandler(this.frmJuego_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

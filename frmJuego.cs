@@ -46,5 +46,10 @@ namespace Yahtzee
         {
             lblJugadores.Text = "Los jugadores son: " + this.jugadores;
         }
+
+        private void frmJuego_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -12,6 +12,7 @@ namespace Yahtzee
 {
     public partial class frmInicio : Form
     {
+
         public frmInicio()
         {
             InitializeComponent();
@@ -19,7 +20,7 @@ namespace Yahtzee
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            cbJugadores.SelectedIndex = 0;
         }
 
         private void btnSalir_Click(object sender, EventArgs e)
@@ -39,7 +40,6 @@ namespace Yahtzee
             juego.setJugadores(cbJugadores.SelectedIndex);
             juego.setLabelJugadores();
             juego.Show();
-
         }
     }
 }
