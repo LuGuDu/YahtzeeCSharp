@@ -1,13 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Yahtzee
-{
-    static class Program
-    {
+namespace Yahtzee {
+    static class Program {
         /// <summary>
         /// Punto de entrada principal para la aplicación.
         /// </summary>
@@ -16,7 +11,8 @@ namespace Yahtzee
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmInicio());
+            frmInicio inicio = frmInicio.getInstance();
+            Application.Run(inicio);
         }
     }
 }

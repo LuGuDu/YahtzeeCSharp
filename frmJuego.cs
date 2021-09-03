@@ -1,33 +1,29 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Yahtzee
-{
+namespace Yahtzee {
 
-    public partial class frmJuego : Form
-    {
+    public partial class frmJuego : Form {
         private int jugadores;
-
-        public frmJuego()
-        {
+        static frmJuego mInstance;
+        
+        private frmJuego() {
             InitializeComponent();
         }
 
-        private void frmJuego_FormClosing(object sender, FormClosingEventArgs e)
-        {
+        public static frmJuego getInstance() {
+            if (mInstance == null) {
+                mInstance = new frmJuego();
+            }
+            return mInstance;
+        }
+
+        private void frmJuego_FormClosing(object sender, FormClosingEventArgs e) {
             Application.Exit();
         }
 
-        public void setJugadores(int jugadores)
-        {
-            switch(jugadores){
+        public void setJugadores(int jugadores) {
+            switch (jugadores) {
                 case 0:
                     this.jugadores = 2;
                     break;
@@ -42,13 +38,11 @@ namespace Yahtzee
             }
         }
 
-        public void setLabelJugadores()
-        {
+        public void setLabelJugadores() {
             lblJugadores.Text = "Los jugadores son: " + this.jugadores;
         }
 
-        private void frmJuego_Load(object sender, EventArgs e)
-        {
+        private void frmJuego_Load(object sender, EventArgs e) {
 
         }
     }
