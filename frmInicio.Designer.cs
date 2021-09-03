@@ -53,7 +53,7 @@
             "2 Jugadores",
             "3 Jugadores",
             "4 Jugadores"});
-            this.cbJugadores.Location = new System.Drawing.Point(309, 238);
+            this.cbJugadores.Location = new System.Drawing.Point(307, 230);
             this.cbJugadores.Name = "cbJugadores";
             this.cbJugadores.Size = new System.Drawing.Size(199, 24);
             this.cbJugadores.TabIndex = 1;
@@ -62,7 +62,7 @@
             // btnSalir
             // 
             this.btnSalir.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnSalir.Location = new System.Drawing.Point(434, 318);
+            this.btnSalir.Location = new System.Drawing.Point(440, 318);
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.Size = new System.Drawing.Size(199, 57);
             this.btnSalir.TabIndex = 2;
@@ -79,11 +79,13 @@
             this.lblTitulo.Size = new System.Drawing.Size(525, 61);
             this.lblTitulo.TabIndex = 3;
             this.lblTitulo.Text = "YAHTZEE - PC Edition";
+            this.lblTitulo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // frmInicio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.lblTitulo);
             this.Controls.Add(this.btnSalir);
