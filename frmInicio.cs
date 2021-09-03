@@ -32,7 +32,6 @@ namespace Yahtzee {
             this.Hide();
             frmJuego juego = frmJuego.getInstance();
             juego.setJugadores(cbJugadores.SelectedIndex);
-            juego.setLabelJugadores();
             juego.Show();
         }
     }

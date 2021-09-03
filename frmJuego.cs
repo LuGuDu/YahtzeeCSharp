@@ -36,13 +36,21 @@ namespace Yahtzee {
                 default:
                     break;
             }
-        }
-
-        public void setLabelJugadores() {
+            SetTable(this.jugadores);
             lblJugadores.Text = "Los jugadores son: " + this.jugadores;
         }
 
         private void frmJuego_Load(object sender, EventArgs e) {
+
+        }
+
+        private void btnVolver_Click(object sender, EventArgs e) {
+            this.Hide();
+            frmInicio.getInstance().Show();
+
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e) {
 
         }
     }

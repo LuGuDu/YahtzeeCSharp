@@ -90,6 +90,7 @@
             this.Controls.Add(this.cbJugadores);
             this.Controls.Add(this.btnEmpezar);
             this.Name = "frmInicio";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Yahtzee";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
