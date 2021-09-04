@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Media;
 using System.Windows.Forms;
 
 namespace Yahtzee {
@@ -126,6 +127,9 @@ namespace Yahtzee {
         }
 
         private void btnTirarDados_Click(object sender, EventArgs e) {
+
+            SoundPlayer simpleSound = new SoundPlayer(global::Yahtzee.Properties.Resources.sonidoDados2);
+            simpleSound.Play();
 
             btnDado1.Enabled = true;
             btnDado2.Enabled = true;

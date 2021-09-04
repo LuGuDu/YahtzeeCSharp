@@ -119,5 +119,14 @@ namespace Yahtzee.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.IO.UnmanagedMemoryStream similar a System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream sonidoDados2 {
+            get {
+                return ResourceManager.GetStream("sonidoDados2", resourceCulture);
+            }
+        }
     }
 }
