@@ -69,7 +69,7 @@ namespace Yahtzee
             this.j3,
             this.j4});
             this.dataGridView1.Location = new System.Drawing.Point(458, 78);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
@@ -125,21 +125,24 @@ namespace Yahtzee
             // 
             // btnVolver
             // 
-            this.btnVolver.Location = new System.Drawing.Point(764, 25);
-            this.btnVolver.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnVolver.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnVolver.Location = new System.Drawing.Point(46, 504);
+            this.btnVolver.Margin = new System.Windows.Forms.Padding(2);
             this.btnVolver.Name = "btnVolver";
-            this.btnVolver.Size = new System.Drawing.Size(76, 28);
+            this.btnVolver.Size = new System.Drawing.Size(85, 38);
             this.btnVolver.TabIndex = 2;
-            this.btnVolver.Text = "Volver";
+            this.btnVolver.Text = "Abandonar";
             this.btnVolver.UseVisualStyleBackColor = true;
             this.btnVolver.Click += new System.EventHandler(this.btnVolver_Click);
+
             // 
             // btnDado1
             // 
+            this.btnDado1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnDado1.Enabled = false;
             this.btnDado1.Image = ((System.Drawing.Image)(resources.GetObject("btnDado1.Image")));
             this.btnDado1.Location = new System.Drawing.Point(34, 140);
-            this.btnDado1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnDado1.Margin = new System.Windows.Forms.Padding(2);
             this.btnDado1.Name = "btnDado1";
             this.btnDado1.Size = new System.Drawing.Size(60, 60);
             this.btnDado1.TabIndex = 3;
@@ -148,10 +151,11 @@ namespace Yahtzee
             // 
             // btnDado2
             // 
+            this.btnDado2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnDado2.Enabled = false;
             this.btnDado2.Image = ((System.Drawing.Image)(resources.GetObject("btnDado2.Image")));
             this.btnDado2.Location = new System.Drawing.Point(148, 140);
-            this.btnDado2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnDado2.Margin = new System.Windows.Forms.Padding(2);
             this.btnDado2.Name = "btnDado2";
             this.btnDado2.Size = new System.Drawing.Size(60, 60);
             this.btnDado2.TabIndex = 4;
@@ -160,10 +164,11 @@ namespace Yahtzee
             // 
             // btnDado3
             // 
+            this.btnDado3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnDado3.Enabled = false;
             this.btnDado3.Image = global::Yahtzee.Properties.Resources.dado2;
             this.btnDado3.Location = new System.Drawing.Point(254, 140);
-            this.btnDado3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnDado3.Margin = new System.Windows.Forms.Padding(2);
             this.btnDado3.Name = "btnDado3";
             this.btnDado3.Size = new System.Drawing.Size(60, 60);
             this.btnDado3.TabIndex = 5;
@@ -172,10 +177,11 @@ namespace Yahtzee
             // 
             // btnDado4
             // 
+            this.btnDado4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnDado4.Enabled = false;
             this.btnDado4.Image = ((System.Drawing.Image)(resources.GetObject("btnDado4.Image")));
             this.btnDado4.Location = new System.Drawing.Point(91, 225);
-            this.btnDado4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnDado4.Margin = new System.Windows.Forms.Padding(2);
             this.btnDado4.Name = "btnDado4";
             this.btnDado4.Size = new System.Drawing.Size(60, 60);
             this.btnDado4.TabIndex = 6;
@@ -184,10 +190,11 @@ namespace Yahtzee
             // 
             // btnDado5
             // 
+            this.btnDado5.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnDado5.Enabled = false;
             this.btnDado5.Image = ((System.Drawing.Image)(resources.GetObject("btnDado5.Image")));
             this.btnDado5.Location = new System.Drawing.Point(202, 225);
-            this.btnDado5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnDado5.Margin = new System.Windows.Forms.Padding(2);
             this.btnDado5.Name = "btnDado5";
             this.btnDado5.Size = new System.Drawing.Size(60, 60);
             this.btnDado5.TabIndex = 7;
@@ -196,8 +203,9 @@ namespace Yahtzee
             // 
             // btnTirarDados
             // 
+            this.btnTirarDados.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnTirarDados.Location = new System.Drawing.Point(46, 451);
-            this.btnTirarDados.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnTirarDados.Margin = new System.Windows.Forms.Padding(2);
             this.btnTirarDados.Name = "btnTirarDados";
             this.btnTirarDados.Size = new System.Drawing.Size(308, 29);
             this.btnTirarDados.TabIndex = 8;
@@ -207,15 +215,17 @@ namespace Yahtzee
             // 
             // btnSiguente
             // 
+            this.btnSiguente.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnSiguente.Enabled = false;
-            this.btnSiguente.Location = new System.Drawing.Point(202, 504);
-            this.btnSiguente.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnSiguente.Location = new System.Drawing.Point(148, 504);
+            this.btnSiguente.Margin = new System.Windows.Forms.Padding(2);
             this.btnSiguente.Name = "btnSiguente";
-            this.btnSiguente.Size = new System.Drawing.Size(152, 38);
+            this.btnSiguente.Size = new System.Drawing.Size(206, 38);
             this.btnSiguente.TabIndex = 9;
             this.btnSiguente.Text = "Siguiente Turno";
             this.btnSiguente.UseVisualStyleBackColor = true;
             this.btnSiguente.Click += new System.EventHandler(this.btnSiguente_Click);
+
             // 
             // frmJuego
             // 
@@ -233,7 +243,7 @@ namespace Yahtzee
             this.Controls.Add(this.btnVolver);
             this.Controls.Add(this.dataGridView1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "frmJuego";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Yahtzee";

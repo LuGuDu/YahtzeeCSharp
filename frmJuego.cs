@@ -48,17 +48,27 @@ namespace Yahtzee {
         }
 
         private void frmJuego_Load(object sender, EventArgs e) {
-            this.btnDado1.Location = new System.Drawing.Point(45, 172);
-            this.btnDado2.Location = new System.Drawing.Point(198, 172);
-            this.btnDado3.Location = new System.Drawing.Point(339, 172);
-            this.btnDado4.Location = new System.Drawing.Point(121, 277);
-            this.btnDado5.Location = new System.Drawing.Point(270, 277);
+            this.btnDado1.Location = new System.Drawing.Point(45, 150);
+            this.btnDado2.Location = new System.Drawing.Point(198, 150);
+            this.btnDado3.Location = new System.Drawing.Point(339, 150);
+            this.btnDado4.Location = new System.Drawing.Point(121, 250);
+            this.btnDado5.Location = new System.Drawing.Point(270, 250);
         }
 
         private void btnVolver_Click(object sender, EventArgs e) {
-            this.Hide();
-            frmInicio.getInstance().Show();
+            confirmarVolver();
 
+        }
+
+        private void confirmarVolver() {
+            var confirmResult = MessageBox.Show("Seguro que quereis abandonar?",
+                                     "Confirmar Abandono",
+                                     MessageBoxButtons.YesNo);
+            if (confirmResult == DialogResult.Yes) {
+                this.Hide();
+                frmInicio.getInstance().Show();
+                mInstance = null;
+            } 
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e) {
@@ -70,7 +80,7 @@ namespace Yahtzee {
                 this.btnDado1.Location = new System.Drawing.Point(45, 350);
                 dado1Tirar = false;
             } else {
-                this.btnDado1.Location = new System.Drawing.Point(45, 172);
+                this.btnDado1.Location = new System.Drawing.Point(45, 150);
                 dado1Tirar = true;
             }
         }
@@ -80,7 +90,7 @@ namespace Yahtzee {
                 this.btnDado2.Location = new System.Drawing.Point(198, 350);
                 dado2Tirar = false;
             } else {
-                this.btnDado2.Location = new System.Drawing.Point(198, 172);
+                this.btnDado2.Location = new System.Drawing.Point(198, 150);
                 dado2Tirar = true;
             }
         }
@@ -90,7 +100,7 @@ namespace Yahtzee {
                 this.btnDado3.Location = new System.Drawing.Point(339, 350);
                 dado3Tirar = false;
             } else {
-                this.btnDado3.Location = new System.Drawing.Point(339, 172);
+                this.btnDado3.Location = new System.Drawing.Point(339, 150);
                 dado3Tirar = true;
             }
         }
@@ -100,7 +110,7 @@ namespace Yahtzee {
                 this.btnDado4.Location = new System.Drawing.Point(121, 350);
                 dado4Tirar = false;
             } else {
-                this.btnDado4.Location = new System.Drawing.Point(121, 277);
+                this.btnDado4.Location = new System.Drawing.Point(121, 250);
                 dado4Tirar = true;
             }
         }
@@ -110,7 +120,7 @@ namespace Yahtzee {
                 this.btnDado5.Location = new System.Drawing.Point(270, 350);
                 dado5Tirar = false;
             } else {
-                this.btnDado5.Location = new System.Drawing.Point(270, 277);
+                this.btnDado5.Location = new System.Drawing.Point(270, 250);
                 dado5Tirar = true;
             }
         }
@@ -182,11 +192,11 @@ namespace Yahtzee {
             btnTirarDados.Enabled = true;
             btnSiguente.Enabled = false;
 
-            this.btnDado1.Location = new System.Drawing.Point(45, 172);
-            this.btnDado2.Location = new System.Drawing.Point(198, 172);
-            this.btnDado3.Location = new System.Drawing.Point(339, 172);
-            this.btnDado4.Location = new System.Drawing.Point(121, 277);
-            this.btnDado5.Location = new System.Drawing.Point(270, 277);
+            this.btnDado1.Location = new System.Drawing.Point(45, 150);
+            this.btnDado2.Location = new System.Drawing.Point(198, 150);
+            this.btnDado3.Location = new System.Drawing.Point(339, 150);
+            this.btnDado4.Location = new System.Drawing.Point(121, 250);
+            this.btnDado5.Location = new System.Drawing.Point(270, 250);
 
             dado1Tirar = true;
             dado2Tirar = true;
