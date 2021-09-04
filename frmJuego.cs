@@ -129,28 +129,51 @@ namespace Yahtzee {
 
             if (dado1Tirar) {
                 int rInt = r.Next(1, 7); //for ints
-                btnDado1.Text = rInt.ToString();
+                setImagenBoton(btnDado1, rInt);
             }
             if (dado2Tirar) {
                 int rInt = r.Next(1, 7); //for ints
-                btnDado2.Text = rInt.ToString();
+                setImagenBoton(btnDado2, rInt);
             }
             if (dado3Tirar) {
                 int rInt = r.Next(1, 7); //for ints
-                btnDado3.Text = rInt.ToString();
+                setImagenBoton(btnDado3, rInt);
             }
             if (dado4Tirar) {
                 int rInt = r.Next(1, 7); //for ints
-                btnDado4.Text = rInt.ToString();
+                setImagenBoton(btnDado4, rInt);
             }
             if (dado5Tirar) {
                 int rInt = r.Next(1, 7); //for ints
-                btnDado5.Text = rInt.ToString();
+                setImagenBoton(btnDado5, rInt);
             }
 
             if (contadorTirarDados == 3) {
                 btnTirarDados.Enabled = false;
                 btnSiguente.Enabled = true;
+            }
+        }
+
+        private void setImagenBoton(Button boton, int numero) {
+            switch (numero) {
+                case 1:
+                    boton.Image = global::Yahtzee.Properties.Resources.dado1;
+                    break;
+                case 2:
+                    boton.Image = global::Yahtzee.Properties.Resources.dado2;
+                    break;
+                case 3:
+                    boton.Image = global::Yahtzee.Properties.Resources.dado3;
+                    break;
+                case 4:
+                    boton.Image = global::Yahtzee.Properties.Resources.dado4;
+                    break;
+                case 5:
+                    boton.Image = global::Yahtzee.Properties.Resources.dado5;
+                    break;
+                case 6:
+                    boton.Image = global::Yahtzee.Properties.Resources.dado6;
+                    break;
             }
         }
 
