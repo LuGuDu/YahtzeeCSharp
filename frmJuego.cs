@@ -45,7 +45,6 @@ namespace Yahtzee {
                     break;
             }
             SetTable(this.jugadores);
-            lblJugadores.Text = "Los jugadores son: " + this.jugadores;
         }
 
         private void frmJuego_Load(object sender, EventArgs e) {
@@ -153,7 +152,6 @@ namespace Yahtzee {
                 btnTirarDados.Enabled = false;
                 btnSiguente.Enabled = true;
             }
-
         }
 
         private void btnSiguente_Click(object sender, EventArgs e) {
@@ -178,7 +176,6 @@ namespace Yahtzee {
             btnDado3.Enabled = false;
             btnDado4.Enabled = false;
             btnDado5.Enabled = false;
-
         }
     }
 }

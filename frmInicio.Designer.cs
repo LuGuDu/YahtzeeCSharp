@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmInicio));
             this.btnEmpezar = new System.Windows.Forms.Button();
             this.cbJugadores = new System.Windows.Forms.ComboBox();
             this.btnSalir = new System.Windows.Forms.Button();
@@ -91,6 +92,7 @@
             this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.cbJugadores);
             this.Controls.Add(this.btnEmpezar);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmInicio";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Yahtzee";

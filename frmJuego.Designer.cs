@@ -37,7 +37,7 @@ namespace Yahtzee
         /// </summary>
         private void InitializeComponent()
         {
-            this.lblJugadores = new System.Windows.Forms.Label();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmJuego));
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.combos = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.j1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -54,15 +54,6 @@ namespace Yahtzee
             this.btnSiguente = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // lblJugadores
-            // 
-            this.lblJugadores.AutoSize = true;
-            this.lblJugadores.Location = new System.Drawing.Point(32, 25);
-            this.lblJugadores.Name = "lblJugadores";
-            this.lblJugadores.Size = new System.Drawing.Size(46, 17);
-            this.lblJugadores.TabIndex = 0;
-            this.lblJugadores.Text = "label1";
             // 
             // dataGridView1
             // 
@@ -232,7 +223,7 @@ namespace Yahtzee
             this.Controls.Add(this.btnDado1);
             this.Controls.Add(this.btnVolver);
             this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.lblJugadores);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmJuego";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Yahtzee";
@@ -240,7 +231,6 @@ namespace Yahtzee
             this.Load += new System.EventHandler(this.frmJuego_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -266,8 +256,6 @@ namespace Yahtzee
                 this.dataGridView1.Rows.Add(this.tituloCombos[i], "", "", "", "");
             }
         }
-
-        private System.Windows.Forms.Label lblJugadores;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button btnVolver;
         private DataGridViewTextBoxColumn combos;
