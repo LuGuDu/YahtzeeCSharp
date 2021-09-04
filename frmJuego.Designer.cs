@@ -45,6 +45,13 @@ namespace Yahtzee
             this.j3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.j4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnVolver = new System.Windows.Forms.Button();
+            this.btnDado1 = new System.Windows.Forms.Button();
+            this.btnDado2 = new System.Windows.Forms.Button();
+            this.btnDado3 = new System.Windows.Forms.Button();
+            this.btnDado4 = new System.Windows.Forms.Button();
+            this.btnDado5 = new System.Windows.Forms.Button();
+            this.btnTirarDados = new System.Windows.Forms.Button();
+            this.btnSiguente = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -134,12 +141,95 @@ namespace Yahtzee
             this.btnVolver.UseVisualStyleBackColor = true;
             this.btnVolver.Click += new System.EventHandler(this.btnVolver_Click);
             // 
+            // btnDado1
+            // 
+            this.btnDado1.Enabled = false;
+            this.btnDado1.Location = new System.Drawing.Point(45, 172);
+            this.btnDado1.Name = "btnDado1";
+            this.btnDado1.Size = new System.Drawing.Size(65, 60);
+            this.btnDado1.TabIndex = 3;
+            this.btnDado1.Text = "4";
+            this.btnDado1.UseVisualStyleBackColor = true;
+            this.btnDado1.Click += new System.EventHandler(this.btnDado1_Click);
+            // 
+            // btnDado2
+            // 
+            this.btnDado2.Enabled = false;
+            this.btnDado2.Location = new System.Drawing.Point(198, 172);
+            this.btnDado2.Name = "btnDado2";
+            this.btnDado2.Size = new System.Drawing.Size(65, 60);
+            this.btnDado2.TabIndex = 4;
+            this.btnDado2.Text = "5";
+            this.btnDado2.UseVisualStyleBackColor = true;
+            this.btnDado2.Click += new System.EventHandler(this.btnDado2_Click);
+            // 
+            // btnDado3
+            // 
+            this.btnDado3.Enabled = false;
+            this.btnDado3.Location = new System.Drawing.Point(339, 172);
+            this.btnDado3.Name = "btnDado3";
+            this.btnDado3.Size = new System.Drawing.Size(65, 60);
+            this.btnDado3.TabIndex = 5;
+            this.btnDado3.Text = "5";
+            this.btnDado3.UseVisualStyleBackColor = true;
+            this.btnDado3.Click += new System.EventHandler(this.btnDado3_Click);
+            // 
+            // btnDado4
+            // 
+            this.btnDado4.Enabled = false;
+            this.btnDado4.Location = new System.Drawing.Point(121, 277);
+            this.btnDado4.Name = "btnDado4";
+            this.btnDado4.Size = new System.Drawing.Size(65, 60);
+            this.btnDado4.TabIndex = 6;
+            this.btnDado4.Text = "2";
+            this.btnDado4.UseVisualStyleBackColor = true;
+            this.btnDado4.Click += new System.EventHandler(this.btnDado4_Click);
+            // 
+            // btnDado5
+            // 
+            this.btnDado5.Enabled = false;
+            this.btnDado5.Location = new System.Drawing.Point(270, 277);
+            this.btnDado5.Name = "btnDado5";
+            this.btnDado5.Size = new System.Drawing.Size(65, 60);
+            this.btnDado5.TabIndex = 7;
+            this.btnDado5.Text = "3";
+            this.btnDado5.UseVisualStyleBackColor = true;
+            this.btnDado5.Click += new System.EventHandler(this.btnDado5_Click);
+            // 
+            // btnTirarDados
+            // 
+            this.btnTirarDados.Location = new System.Drawing.Point(62, 555);
+            this.btnTirarDados.Name = "btnTirarDados";
+            this.btnTirarDados.Size = new System.Drawing.Size(410, 36);
+            this.btnTirarDados.TabIndex = 8;
+            this.btnTirarDados.Text = "Tirar Dados";
+            this.btnTirarDados.UseVisualStyleBackColor = true;
+            this.btnTirarDados.Click += new System.EventHandler(this.btnTirarDados_Click);
+            // 
+            // btnSiguente
+            // 
+            this.btnSiguente.Enabled = false;
+            this.btnSiguente.Location = new System.Drawing.Point(270, 620);
+            this.btnSiguente.Name = "btnSiguente";
+            this.btnSiguente.Size = new System.Drawing.Size(202, 47);
+            this.btnSiguente.TabIndex = 9;
+            this.btnSiguente.Text = "Siguiente Turno";
+            this.btnSiguente.UseVisualStyleBackColor = true;
+            this.btnSiguente.Click += new System.EventHandler(this.btnSiguente_Click);
+            // 
             // frmJuego
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.ClientSize = new System.Drawing.Size(1087, 805);
+            this.Controls.Add(this.btnSiguente);
+            this.Controls.Add(this.btnTirarDados);
+            this.Controls.Add(this.btnDado5);
+            this.Controls.Add(this.btnDado4);
+            this.Controls.Add(this.btnDado3);
+            this.Controls.Add(this.btnDado2);
+            this.Controls.Add(this.btnDado1);
             this.Controls.Add(this.btnVolver);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.lblJugadores);
@@ -185,6 +275,12 @@ namespace Yahtzee
         private DataGridViewTextBoxColumn j2;
         private DataGridViewTextBoxColumn j3;
         private DataGridViewTextBoxColumn j4;
-
+        private Button btnDado1;
+        private Button btnDado2;
+        private Button btnDado3;
+        private Button btnDado4;
+        private Button btnDado5;
+        private Button btnTirarDados;
+        private Button btnSiguente;
     }
 }
