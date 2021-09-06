@@ -3,16 +3,16 @@ using System;
 using System.Windows.Forms;
 
 namespace Yahtzee {
-    public partial class frmInicio : Form {
-        static frmInicio mInstance;
+    public partial class FrmInicio : Form {
+        static FrmInicio mInstance;
 
-        private frmInicio() {
+        private FrmInicio() {
             InitializeComponent();
         }
 
-        public static frmInicio getInstance() {
+        public static FrmInicio getInstance() {
             if (mInstance == null) {
-                mInstance = new frmInicio();
+                mInstance = new FrmInicio();
             }
             return mInstance;
         }
@@ -33,7 +33,7 @@ namespace Yahtzee {
         private void btnEmpezar_Click(object sender, EventArgs e) {
 
             this.Hide();
-            frmJuego juego = frmJuego.getInstance();
+            FrmJuego juego = FrmJuego.getInstance();
             juego.setJugadores(cbJugadores.SelectedIndex);
             juego.Show();
         }

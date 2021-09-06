@@ -2,7 +2,7 @@
 
 namespace Yahtzee
 {
-    partial class frmJuego
+    partial class FrmJuego
     {
 
         private string[] tituloCombos = { "Aces", "Twos", "Threes", "Fours", "Fives",
@@ -37,7 +37,7 @@ namespace Yahtzee
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmJuego));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmJuego));
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.combos = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.j1 = new System.Windows.Forms.DataGridViewTextBoxColumn();

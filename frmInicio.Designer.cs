@@ -1,6 +1,6 @@
 ﻿namespace Yahtzee
 {
-    partial class frmInicio
+    partial class FrmInicio
     {
         /// <summary>
         /// Variable del diseñador necesaria.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmInicio));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmInicio));
             this.btnEmpezar = new System.Windows.Forms.Button();
             this.cbJugadores = new System.Windows.Forms.ComboBox();
             this.btnSalir = new System.Windows.Forms.Button();

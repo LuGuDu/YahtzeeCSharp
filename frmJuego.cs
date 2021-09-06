@@ -1,12 +1,13 @@
-﻿using System;
+﻿using Microsoft.VisualBasic;
+using System;
 using System.Media;
 using System.Windows.Forms;
 
 namespace Yahtzee {
 
-    public partial class frmJuego : Form {
+    public partial class FrmJuego : Form {
         private int jugadores;
-        static frmJuego mInstance;
+        static FrmJuego mInstance;
 
         private int turno = 1;
 
@@ -23,13 +24,37 @@ namespace Yahtzee {
 
         private int contadorTirarDados = 0;
         
-        private frmJuego() {
+        private FrmJuego() {
             InitializeComponent();
         }
 
-        public static frmJuego getInstance() {
+        public void setNombreJ1(string nombre) {
+            if(!nombre.Equals("")) {
+                this.nombreJ1 = nombre;
+            }
+        }
+
+        public void setNombreJ2(string nombre) {
+            if(!nombre.Equals("")) {
+                this.nombreJ2 = nombre;
+            }
+        }
+
+        public void setNombreJ3(string nombre) {
+            if(!nombre.Equals("")) {
+                this.nombreJ3 = nombre;
+            }
+        }
+
+        public void setNombreJ4(string nombre) {
+            if (!nombre.Equals("")) {
+                this.nombreJ4 = nombre;
+            }
+        }
+
+        public static FrmJuego getInstance() {
             if (mInstance == null) {
-                mInstance = new frmJuego();
+                mInstance = new FrmJuego();
             }
             return mInstance;
         }
@@ -52,7 +77,25 @@ namespace Yahtzee {
                 default:
                     break;
             }
+            setNombreJugadores();
             SetTable(this.jugadores);
+        }
+
+        private void setNombreJugadores() {
+            FrmJuego frmJuego = FrmJuego.getInstance();
+            frmJuego.setNombreJ1(Interaction.InputBox("Inserte Nombre a j1", "Inserte Nombre", "j1"));
+
+            if (jugadores >= 2) {
+                frmJuego.setNombreJ2(Interaction.InputBox("Inserte Nombre a j2", "Inserte Nombre", "j2"));
+            }
+
+            if (jugadores >= 3) {
+                frmJuego.setNombreJ3(Interaction.InputBox("Inserte Nombre a j3", "Inserte Nombre", "j3"));
+            }
+
+            if (jugadores >= 4) {
+                frmJuego.setNombreJ4(Interaction.InputBox("Inserte Nombre a j4", "Inserte Nombre", "j4"));
+            }
         }
 
         private void frmJuego_Load(object sender, EventArgs e) {
@@ -72,7 +115,6 @@ namespace Yahtzee {
 
         private void btnVolver_Click(object sender, EventArgs e) {
             confirmarVolver();
-
         }
 
         private void confirmarVolver() {
@@ -81,7 +123,7 @@ namespace Yahtzee {
                                      MessageBoxButtons.YesNo);
             if (confirmResult == DialogResult.Yes) {
                 this.Hide();
-                frmInicio.getInstance().Show();
+                FrmInicio.getInstance().Show();
                 mInstance = null;
             } 
         }

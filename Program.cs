@@ -11,7 +11,7 @@ namespace Yahtzee {
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(frmInicio.getInstance());
+            Application.Run(FrmInicio.getInstance());
         }
     }
 }
