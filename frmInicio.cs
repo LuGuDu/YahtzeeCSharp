@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.VisualBasic;
+using System;
 using System.Windows.Forms;
 
 namespace Yahtzee {
@@ -18,6 +19,7 @@ namespace Yahtzee {
 
         private void Form1_Load(object sender, EventArgs e) {
             cbJugadores.SelectedIndex = 0;
+
         }
 
         private void btnSalir_Click(object sender, EventArgs e) {
@@ -29,6 +31,7 @@ namespace Yahtzee {
         }
 
         private void btnEmpezar_Click(object sender, EventArgs e) {
+
             this.Hide();
             frmJuego juego = frmJuego.getInstance();
             juego.setJugadores(cbJugadores.SelectedIndex);

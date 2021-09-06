@@ -8,11 +8,18 @@ namespace Yahtzee {
         private int jugadores;
         static frmJuego mInstance;
 
+        private int turno = 1;
+
         private bool dado1Tirar = true;
         private bool dado2Tirar = true;
         private bool dado3Tirar = true;
         private bool dado4Tirar = true;
         private bool dado5Tirar = true;
+
+        private string nombreJ1 = "j1";
+        private string nombreJ2 = "j2";
+        private string nombreJ3 = "j3";
+        private string nombreJ4 = "j4";
 
         private int contadorTirarDados = 0;
         
@@ -54,6 +61,13 @@ namespace Yahtzee {
             this.btnDado3.Location = new System.Drawing.Point(339, 150);
             this.btnDado4.Location = new System.Drawing.Point(121, 250);
             this.btnDado5.Location = new System.Drawing.Point(270, 250);
+
+            this.j1.HeaderText = nombreJ1;
+            this.j2.HeaderText = nombreJ2;
+            this.j3.HeaderText = nombreJ3;
+            this.j4.HeaderText = nombreJ4;
+
+            lblTextoTurno.Text = "Turno de: " + this.j1.HeaderText;
         }
 
         private void btnVolver_Click(object sender, EventArgs e) {
@@ -213,6 +227,31 @@ namespace Yahtzee {
             btnDado3.Enabled = false;
             btnDado4.Enabled = false;
             btnDado5.Enabled = false;
+
+            turno++;
+
+            if (turno > jugadores) {
+                turno = 1;
+            }
+
+            switch (turno) {
+                case 1:
+                    lblTextoTurno.Text = "Turno de: " + this.j1.HeaderText;
+                    break;
+                case 2:
+                    lblTextoTurno.Text = "Turno de: " + this.j2.HeaderText;
+                    break;
+                case 3:
+                    lblTextoTurno.Text = "Turno de: " + this.j3.HeaderText;
+                    break;
+                case 4:
+                    lblTextoTurno.Text = "Turno de: " + this.j4.HeaderText;
+                    break;
+                default:
+                    lblTextoTurno.Text = "Turno de: " + this.j1.HeaderText;
+                    break;
+            }
+
         }
     }
 }

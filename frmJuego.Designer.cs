@@ -52,6 +52,7 @@ namespace Yahtzee
             this.btnDado5 = new System.Windows.Forms.Button();
             this.btnTirarDados = new System.Windows.Forms.Button();
             this.btnSiguente = new System.Windows.Forms.Button();
+            this.lblTextoTurno = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -134,7 +135,6 @@ namespace Yahtzee
             this.btnVolver.Text = "Abandonar";
             this.btnVolver.UseVisualStyleBackColor = true;
             this.btnVolver.Click += new System.EventHandler(this.btnVolver_Click);
-
             // 
             // btnDado1
             // 
@@ -225,7 +225,16 @@ namespace Yahtzee
             this.btnSiguente.Text = "Siguiente Turno";
             this.btnSiguente.UseVisualStyleBackColor = true;
             this.btnSiguente.Click += new System.EventHandler(this.btnSiguente_Click);
-
+            // 
+            // lblTextoTurno
+            // 
+            this.lblTextoTurno.AutoSize = true;
+            this.lblTextoTurno.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTextoTurno.Location = new System.Drawing.Point(29, 49);
+            this.lblTextoTurno.Name = "lblTextoTurno";
+            this.lblTextoTurno.Size = new System.Drawing.Size(113, 25);
+            this.lblTextoTurno.TabIndex = 10;
+            this.lblTextoTurno.Text = "Turno de:";
             // 
             // frmJuego
             // 
@@ -233,6 +242,7 @@ namespace Yahtzee
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.ClientSize = new System.Drawing.Size(873, 654);
+            this.Controls.Add(this.lblTextoTurno);
             this.Controls.Add(this.btnSiguente);
             this.Controls.Add(this.btnTirarDados);
             this.Controls.Add(this.btnDado5);
@@ -251,6 +261,7 @@ namespace Yahtzee
             this.Load += new System.EventHandler(this.frmJuego_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -290,5 +301,6 @@ namespace Yahtzee
         private Button btnDado5;
         private Button btnTirarDados;
         private Button btnSiguente;
+        private Label lblTextoTurno;
     }
 }
