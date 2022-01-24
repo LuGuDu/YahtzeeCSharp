@@ -28,6 +28,9 @@ namespace Yahtzee {
             InitializeComponent();
         }
 
+        private void lblTiradas_Click(object sender, EventArgs e) {
+
+        }
         public void setNombreJ1(string nombre) {
             if(!nombre.Equals("")) {
                 this.nombreJ1 = nombre;
@@ -184,8 +187,12 @@ namespace Yahtzee {
 
         private void btnTirarDados_Click(object sender, EventArgs e) {
 
+            lblTiradas.Text = "Tiradas: " + (2- contadorTirarDados);
+
             SoundPlayer simpleSound = new SoundPlayer(global::Yahtzee.Properties.Resources.sonidoDados2);
             simpleSound.Play();
+
+            btnSiguente.Enabled = true;
 
             btnDado1.Enabled = true;
             btnDado2.Enabled = true;
@@ -248,6 +255,7 @@ namespace Yahtzee {
         }
 
         private void btnSiguente_Click(object sender, EventArgs e) {
+            lblTiradas.Text = "Tiradas: 3";
             contadorTirarDados = 0;
             btnTirarDados.Enabled = true;
             btnSiguente.Enabled = false;
@@ -295,5 +303,7 @@ namespace Yahtzee {
             }
 
         }
+
+
     }
 }
